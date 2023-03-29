@@ -44,12 +44,11 @@ export default function Navbar()
                       <i className="bi bi-chevron-down" style={{fontSize:"0.8rem"}}></i>
                     </MenuButton>
                     <MenuList>
-                    <Link to="/profile">
-                      <MenuItem>
+                      <MenuItem as={Link} to="/profile">
                           Profile
                       </MenuItem>
-                    </Link>
-                    <MenuItem as={Link} to={`/admin`}>Admin Panel</MenuItem>                                                    
+                      <MenuItem as={Link} to="/rooms">Accommodate Rooms</MenuItem>
+                      <MenuItem as={Link} to="/admin">Admin Panel</MenuItem>
                       <MenuItem onClick={logOut}>Logout</MenuItem>
                     </MenuList>
                   </Menu>
